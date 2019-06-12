@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0,252,252,1) 0%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0,252,252,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0,252,252,1) 0%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(0,252,252,1) 0%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(0,252,252,1) 0%, rgba(0,0,0,1) 100%); /* ie10+ */
+  background: radial-gradient(ellipse at center, rgba(0,252,252,1) 0%, rgba(0,0,0,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00FCFC', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
+}
+
+.wrap {
+  margin: 6% auto;
+  position: relative;
+}
+
+.wrap:after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #5f99a9;
+}
+
+.clock {
+  border-radius: 50%;
+  -webkit-box-shadow: -1px 1px 21px 12px rgba(0,0,0,0.8); 
+  box-shadow: -1px 1px 21px 12px rgba(0,0,0,0.8), 
+              inset 0px -1px 7px rgba(0,0,0,0.6);
+  width: 500px;
+  height: 500px;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.clock:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 120px;
+  border-radius: 5px;
+  left: 246px;
+  top: 26%;
+  background-color: #c35f5f;
+  transform-origin: 50% 100%;
+  -webkit-animation: seconds 3600s infinite steps(60);
+    -moz-animation: seconds 3600s infinite steps(60);
+      -ms-animation: seconds 3600s infinite steps(60);
+        -o-animation: seconds 3600s infinite steps(60);
+          animation: seconds 3600s infinite steps(60);
+}
+
+.clock:before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 48%;
+  border-radius: 5px;
+  background-color: #5f99a9;
+  position: absolute;
+  right: 246px;
+  top: 2%;
+  transform-origin: 50% 100%;
+  -webkit-animation: seconds 60s infinite steps(60);
+    -moz-animation: seconds 60s infinite steps(60);
+      -ms-animation: seconds 60s infinite steps(60);
+        -o-animation: seconds 60s infinite steps(60);
+          animation: seconds 60s infinite steps(60);
+}
+
+@keyframes seconds {
+  0% {
+    -webkit-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg); 
+		-ms-transform: rotate(0deg); 
+		  -o-transform: rotate(0deg); 
+		    transform: rotate(0deg);
+  }
+  100% {
+	-webkit-transform: rotate(360deg);
+	  -moz-transform: rotate(360deg); 
+		-ms-transform: rotate(360deg); 
+		  -o-transform: rotate(360deg); 
+		    transform: rotate(360deg);
+	}
+}
