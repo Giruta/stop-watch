@@ -60,10 +60,10 @@ body {
   background-color: #c35f5f;
   transform-origin: 50% 100%;
   -webkit-animation: seconds 3600s infinite steps(60);
-    -moz-animation: seconds 3600s infinite steps(60);
-      -ms-animation: seconds 3600s infinite steps(60);
-        -o-animation: seconds 3600s infinite steps(60);
-          animation: seconds 3600s infinite steps(60);
+  -moz-animation: seconds 3600s infinite steps(60);
+  -ms-animation: seconds 3600s infinite steps(60);
+  -o-animation: seconds 3600s infinite steps(60);
+  animation: seconds 3600s infinite steps(60);
 }
 
 .clock:before {
@@ -78,10 +78,10 @@ body {
   top: 2%;
   transform-origin: 50% 100%;
   -webkit-animation: seconds 60s infinite steps(60);
-    -moz-animation: seconds 60s infinite steps(60);
-      -ms-animation: seconds 60s infinite steps(60);
-        -o-animation: seconds 60s infinite steps(60);
-          animation: seconds 60s infinite steps(60);
+  -moz-animation: seconds 60s infinite steps(60);
+  -ms-animation: seconds 60s infinite steps(60);
+  -o-animation: seconds 60s infinite steps(60);
+  animation: seconds 60s infinite steps(60);
 }
 
 @keyframes seconds {
@@ -89,14 +89,14 @@ body {
     -webkit-transform: rotate(0deg);
 	  -moz-transform: rotate(0deg); 
 		-ms-transform: rotate(0deg); 
-		  -o-transform: rotate(0deg); 
-		    transform: rotate(0deg);
+		-o-transform: rotate(0deg); 
+		transform: rotate(0deg);
   }
   100% {
-	-webkit-transform: rotate(360deg);
+	  -webkit-transform: rotate(360deg);
 	  -moz-transform: rotate(360deg); 
-		-ms-transform: rotate(360deg); 
-		  -o-transform: rotate(360deg); 
-		    transform: rotate(360deg);
+	  -ms-transform: rotate(360deg); 
+	  -o-transform: rotate(360deg); 
+	  transform: rotate(360deg);
 	}
 }
